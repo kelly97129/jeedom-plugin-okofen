@@ -27,20 +27,20 @@ class okofen extends eqLogic {
 	//in a future version may populate by  http://192.168.1.59:85/js/config.min.js
 	//or use stawen map: https://github.com/stawen/okovision/blob/master/_langs/vartx_fr.properties
 	private $_OkoValues = array (
-	    array( 'name' => 'Etat Chaudière',            'okoId' => 'CAPPL:FA[0].L_kesselstatus'              , 'subType' => 'string'  ),
+	    array( 'name' => 'Etat Chaudière',    'okoId' => 'CAPPL:FA[0].L_kesselstatus'              , 'subType' => 'string'  ),
 	    array( 'name' => 'Temp Ext',          'okoId' => 'CAPPL:LOCAL.L_aussentemperatur_ist'      , 'subType' => 'numeric'),	
         array( 'name' => 'Temp Chaudière',    'okoId' => 'CAPPL:FA[0].L_kesseltemperatur'          , 'subType' => 'numeric'),
 	    array( 'name' => 'Temp Amb',          'okoId' => 'CAPPL:LOCAL.L_hk[0].raumtemp_ist'        , 'subType' => 'numeric'),        
 		array( 'name' => 'Pompe Chf1',        'okoId' => 'CAPPL:LOCAL.L_hk[0].pumpe'               , 'subType' => 'string' ),
         array( 'name' => 'Mode Chf1',         'okoId' => 'CAPPL:LOCAL.hk[0].betriebsart[1]'        , 'subType' => 'string'  ),
-		array( 'name' => 'Consigne confort',         'okoId' => 'CAPPL:LOCAL.hk[0].raumtemp_heizen'        , 'subType' => 'numeric'  ),
-		array( 'name' => 'Consigne reduit',         'okoId' => 'CAPPL:LOCAL.hk[0].raumtemp_absenken'        , 'subType' => 'numeric'  ),
-		array( 'name' => 'Charge ECS',         'okoId' => 'CAPPL:LOCAL.anlage_betriebsart'        , 'subType' => 'string'  ),
-		array( 'name' => 'Mode ECS',         'okoId' => 'CAPPL:LOCAL.ww[0].betriebsart[1]'        , 'subType' => 'string'  ),
+		array( 'name' => 'Consigne confort',  'okoId' => 'CAPPL:LOCAL.hk[0].raumtemp_heizen'       , 'subType' => 'numeric'  ),
+		array( 'name' => 'Consigne reduit',   'okoId' => 'CAPPL:LOCAL.hk[0].raumtemp_absenken'     , 'subType' => 'numeric'  ),
+		array( 'name' => 'Charge ECS',        'okoId' => 'CAPPL:LOCAL.anlage_betriebsart'          , 'subType' => 'string'  ),
+		array( 'name' => 'Mode ECS',          'okoId' => 'CAPPL:LOCAL.ww[0].betriebsart[1]'        , 'subType' => 'string'  ),
 		array( 'name' => 'Temp Ecs',          'okoId' => 'CAPPL:LOCAL.L_ww[0].einschaltfuehler_ist', 'subType' => 'numeric'),
-		array( 'name' => 'Consigne Ecs',          'okoId' => 'CAPPL:LOCAL.ww[0].temp_heizen', 'subType' => 'numeric'),
-		array( 'name' => 'Min Ecs',          'okoId' => 'CAPPL:LOCAL.ww[0].temp_absenken', 'subType' => 'numeric'),
-		array( 'name' => 'Pompe Ecs',          'okoId' => 'CAPPL:LOCAL.L_ww[0].pumpe', 'subType' => 'string'),
+		array( 'name' => 'Consigne Ecs',      'okoId' => 'CAPPL:LOCAL.ww[0].temp_heizen'		   , 'subType' => 'numeric'),
+		array( 'name' => 'Min Ecs',           'okoId' => 'CAPPL:LOCAL.ww[0].temp_absenken'		   , 'subType' => 'numeric'),
+		array( 'name' => 'Pompe Ecs',         'okoId' => 'CAPPL:LOCAL.L_ww[0].pumpe'			   , 'subType' => 'string'),
         );
     /*     * ***********************Methode static*************************** */
      /* Fonction exécutée automatiquement toutes les minutes par Jeedom*/
